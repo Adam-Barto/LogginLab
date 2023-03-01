@@ -27,6 +27,12 @@ public class LogginLab {
     public void setThreshold(Integer threshold) {
         this.threshold = threshold;
     }
+    public boolean thresholdReached(Integer limit){
+        if (this.threshold < limit)
+            return true;
+        else
+            return false;
+    }
 
     public boolean thresholdExceeds(Integer limit) {
         if (this.threshold > limit) 
